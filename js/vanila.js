@@ -212,7 +212,6 @@ function preview_image(event){
         }
     };
     reader.readAsDataURL(event.target.files[0]);
-
 }
 
 function back_user_name_id(){
