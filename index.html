@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+</head>
+<body>
+<a name="top"></a>
+<header class="header">
+
+    <img class="camera" src="./image/icons/photo-camera.png" alt="camera">
+    <div class="search-area">
+        <img class="search" src="./image/icons/search.png" alt="search">
+        <span class="search-field">Поиск</span>
+    </div>
+    <img class="logo" src="./image/icons/logo.png" alt="logo">
+</header>
+
+<nav class="navigation" id="nav">
+    <img id="new-post" src="./image/icons/news_icon.png" alt="nav-icon" class="navigation_icons">
+    <a href="#top"><img src="./image/icons/home.png" alt="nav-icon" class="navigation_icons" ></a>
+</nav>
+
+<div class="add-new" id="add-new">
+    <img src="./image/cristofer-jeschke-1082551-unsplash.jpg" alt="user-photo" class="top-photo">
+    <span class="what-new"> &nbsp; &nbsp; Что нового ?</span>
+    <img class="ph" src="./image/icons/add-image.png" alt="">
+</div>
+
+<section class="news-feed">
+    <div class="news" id="news">
+      <div class="post-warper">
+        <div class="post">
+            <div class="user-info">
+                <div class="user-info-warper">
+                    <img src="./image/cristofer-jeschke-1082551-unsplash.jpg" alt="user-photo" class="user-photo">
+                    <p class="user-name" id="id_' + i + '">What If</p>
+                </div>
+                <div class="control-buttons">
+                    <button  class="post-options" id="ide_' + l + '" onclick=""> </button>
+                </div>
+                <span class="quote">The morning begins with a code.</span>
+            </div>
+            <div  id="content" class="content-place">
+                <img src="./image/adrian-infernus-1081818-unsplash.jpg" alt="" class="uploaded-photo">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="slide-conteiner" class="slide-out-bottom-add-post_conteiner">
+        <div id="head" class="header-add-post">
+            <img id="arrow" class="left-arrow" src="./image/icons/left-arrow.png" alt="left-arrow">
+            <span class="add-post-label">Создать публикацию</span>
+            <button class="submit-adding-post" id="button" onclick="">Поделится</button>
+        </div>
+        <div class="user-information">
+            <img src="./image/cristofer-jeschke-1082551-unsplash.jpg" alt="user-photo" class="user-photo">
+            <textarea type="text" placeholder=" Input your name" id="user-n" class="user-name slide-name" onkeyup="return proverka(this);" onclick="back_user_name_id()" ></textarea>
+        </div>
+        <div class="user-textarea">
+            <textarea type="text" placeholder=" Input your message here (В полях должны быть только латинские, русские буквы и цифры. Иначе будут удалены запрещённые символы.)" id="user-t" class="user-text" onkeyup="textAreaAdjust(this)" onclick="back_user_text_id()" cols="30" rows="1"></textarea>
+        </div>
+
+        <div class="output-wrapper">
+            <label id="X" for="dell-image" class="del-ima"> <img class="img-del" src="./image/icons/clear-button.png" /></label>
+            <button id="dell-image" class="delete-image" onclick=" console.log(11111); "></button>
+            <img id="output_image" />
+        </div>
+
+        <div class="adding-photo">
+            <label for="image-file" id="photo">
+                <img src="./image/icons/add-image.png" alt="">
+            </label>
+            <input type="file" class="upload-button" id="image-file" onchange="preview_image(event)">
+        </div>
+    </div>
+
+    <div id="options" class="slide-out-options-content_conteiner">
+        <div class="slide-out-options-content">
+            <div id="delete" class="pos1" onclick="falg_activation(this.id)">
+                <img src="./image/icons/del-icon.png" alt="option-image" class="option-image">
+                <span class="option-name">Удалить</span>
+            </div>
+            <div id="edit" class="pos2" onclick="falg_activation(this.id)">
+                <img src="./image/icons/edit.png" alt="option-image" class="option-image">
+                <span class="option-name">Редактировать</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<script src="js/vanila.js"></script>
+</body>
+</html>

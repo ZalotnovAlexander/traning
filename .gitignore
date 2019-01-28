@@ -1,0 +1,2 @@
+# ignoring xml and iml files in idea
+.idea/
